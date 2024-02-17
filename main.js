@@ -415,7 +415,6 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
             if (mek.key && mek.key.remoteJid === 'status@broadcast') return
             if (!XeonBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
             
-return await WilyKun.readMessages([msg.key])
             if (mek.key.id.startsWith('Xeon') && mek.key.id.length === 16) return
             if (mek.key.id.startsWith('BAE5')) return
             m = smsg(XeonBotInc, mek, store)
